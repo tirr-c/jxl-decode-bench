@@ -1,0 +1,19 @@
+[package]
+name = "jxl-decode-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jpegxl-rs = "0.10.4"
+
+[dependencies.jxl-oxide]
+git = "https://github.com/tirr-c/jxl-oxide.git"
+rev = "5fc6ede"
+
+[dev-dependencies]
+criterion = "0.5.1"
+mimalloc = "0.1.43"
+
+[[bench]]
+name = "decode"
+harness = false
