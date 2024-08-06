@@ -4,7 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-jpegxl-rs = "0.10.4"
+
+[dependencies.jpegxl-rs]
+version = "0.10.4"
+features = ["vendored"]
 
 [dependencies.jxl-oxide]
 git = "https://github.com/tirr-c/jxl-oxide.git"
